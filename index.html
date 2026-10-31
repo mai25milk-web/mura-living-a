@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Cormorant+Garamond:wght@500;600&display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 <header class="hd" id="top">
@@ -27,16 +27,15 @@
 
 <main>
 <section class="hero">
-  <picture>
-    <source media="(max-width:760px)" srcset="assets/img/h-room-sp.webp">
-    <img class="hero__img" src="assets/img/h-room.webp" alt="リビングの壁に掛けた、海のレジンアートの作品" width="1800" height="1125">
-  </picture>
-  <div class="hero__text">
-    <h1>海のレジンアート販売｜沖縄のアトリエ</h1>
-    <p class="hero__copy">沖縄の海を、<br>レジンに<br class="pc">閉じ込めて。</p>
-    <p class="hero__lead">沖縄県豊見城市のレジンアート工房。<br>壁に飾るアートと海のテーブルを、<br class="pc">一点ずつ手作りしています。</p>
-    <a class="btn btn--fill" href="#works">作品を見る</a>
+  <div class="hero__sea">
+    <picture><source media="(max-width:900px)" srcset="assets/img/hh-sea-sp.webp"><img src="assets/img/hh-sea.webp" alt="沖縄の青い海" width="2160" height="675"></picture>
+    <div class="hero__t"><h1>海のレジンアート販売｜沖縄のアトリエ</h1><p class="hero__copy">この沖縄の海を、</p></div>
   </div>
+  <div class="hero__art">
+    <picture><source media="(max-width:900px)" srcset="assets/img/hh-art-sp.webp"><img src="assets/img/hh-art.webp" alt="砂浜の凹凸と波の泡を立体で表した海のレジンアートの作品" width="2160" height="675"></picture>
+    <div class="hero__t"><p class="hero__copy">部屋に飾れるアートに。</p><p class="hero__lead">砂浜の凹凸から波の泡まで、すべて手作りの一点ものです。</p><a class="btn btn--hero" href="#works">作品を見る</a></div>
+  </div>
+  <p class="hero__tag"><span aria-hidden="true"></span>これがレジンアートに</p>
 </section>
 
 <section class="about sand-b1 reveal" id="about">
