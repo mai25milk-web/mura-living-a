@@ -9,4 +9,20 @@
   if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('is-in'); }); return; }
   var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
   items.forEach(function (el) { io.observe(el); });
+
+  // 縦見出しと砂の線
+  var sub = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add(e.target.classList.contains('vhead') ? 'is-in' : 'is-sand'); sub.unobserve(e.target); } }); }, { threshold: .15 });
+  document.querySelectorAll('.vhead,.sand-b1,.sand-b2,.sand-b3,.sand-t3').forEach(function (el) { sub.observe(el); });
+
+  // スクロール：ヘッダーと海の視差
+  var hd = document.querySelector('.hd'), bg = document.querySelector('.hero__bg'), hero = document.querySelector('.hero'), tick = false;
+  var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function run() {
+    var y = scrollY, h = hero.offsetHeight;
+    hd.classList.toggle('is-fixed', y > h * .75);
+    if (!calm && y < h) bg.style.setProperty('--py', (y * .14).toFixed(1) + 'px');
+    tick = false;
+  }
+  addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(run); } }, { passive: true });
+  run();
 })();

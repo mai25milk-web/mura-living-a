@@ -18,7 +18,7 @@ img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:non
 .burger{display:none;background:none;border:0;width:40px;height:40px;padding:8px;cursor:pointer}.burger span{display:block;height:1.5px;background:#fff;margin:8px 0;transition:transform .3s}
 .sp{display:none}
 .hero{position:relative;overflow:hidden;height:62.5vw;min-height:560px;background:#CFEFEF}
-.hero__bg,.hero__layer{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero__bg,.hero__layer,.hero__lace{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero__bg{translate:0 var(--py,0)}.hero__lace{animation:ebb 7s ease-in-out infinite alternate}.hero__lace--2{animation:ebb2 9.5s ease-in-out infinite alternate;opacity:.75}@keyframes ebb{from{transform:translateY(1.1%)}to{transform:translateY(-1.5%)}}@keyframes ebb2{from{transform:translate(-1%,-1.9%)}to{transform:translate(1%,.9%)}}
 .hero picture{position:static}.hero__bg{animation:zoom 14s ease-out both}.hero__layer{animation:tide 2.2s .25s cubic-bezier(.2,.75,.2,1) both}
 @keyframes zoom{from{transform:scale(1.07)}to{transform:scale(1)}}
 @keyframes tide{from{transform:translateY(7%);opacity:.2}to{transform:none;opacity:1}}
@@ -68,6 +68,17 @@ figure{margin:0}figcaption{font:500 12px/2 var(--en);letter-spacing:.27em;color:
 .facts{background:var(--sand);padding:80px 120px}.facts h2{font-size:22px;color:var(--teal);letter-spacing:.1em;max-width:1200px;margin:0 auto 22px}.facts dl{max-width:1200px;margin:auto}.facts dl>div{display:grid;grid-template-columns:220px minmax(0,1fr);padding:11px 0;border-top:1px solid #E3D8C4;font-size:15px}.facts dt{color:var(--teal);font-weight:600;font-size:14px}
 .ft{background:var(--sand);border-top:1px solid #E3D8C4;padding:64px 120px 30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,660px);gap:30px}.ft nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 20px;font-size:14px}.ft nav a:hover{color:var(--teal)}.ft__sns{font-size:13px;color:var(--sub);margin-top:24px}.ft__c{grid-column:1/-1;font:500 12px var(--en);letter-spacing:.1em;color:var(--sub)}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}.reveal.is-in{opacity:1;transform:none}
+/* スクロールの動き */
+.hd.is-fixed{position:fixed;padding-block:14px;background:#ffffffee;backdrop-filter:blur(6px);box-shadow:0 1px 0 var(--line);animation:drop .45s ease both}.hd.is-fixed .logo{color:var(--deep)}.hd.is-fixed .nav{color:var(--ink)}.hd.is-fixed .nav .btn{border-color:var(--teal);color:var(--teal)}.hd.is-fixed .nav .btn:hover{background:var(--teal);color:#fff}.hd.is-fixed .burger span{background:var(--deep)}@keyframes drop{from{transform:translateY(-100%)}to{transform:none}}
+.work.reveal{opacity:1;transform:none}.work img{clip-path:inset(0 100% 0 0);transition:clip-path 1.5s cubic-bezier(.76,0,.24,1)}.work--r img{clip-path:inset(0 0 0 100%)}.work.is-in img{clip-path:inset(0)}
+.work>div{opacity:0;transform:translateY(24px);transition:opacity 1s .6s,transform 1s .6s}.work.is-in>div{opacity:1;transform:none}
+.about.reveal{opacity:1;transform:none}.about img{clip-path:inset(0 100% 0 0);transition:clip-path 1.5s cubic-bezier(.76,0,.24,1)}.about.is-in img{clip-path:inset(0)}.about__body{opacity:0;transform:translateY(24px);transition:opacity 1s .5s,transform 1s .5s}.about.is-in .about__body{opacity:1;transform:none}
+.table__main.reveal{opacity:1;transform:none}.table__main img{clip-path:inset(0 100% 0 0);transition:clip-path 1.7s cubic-bezier(.76,0,.24,1)}.table__main.is-in img{clip-path:inset(0)}
+.tech__list.reveal,.biz__list.reveal,.guide__ways.reveal{opacity:1;transform:none}.tech__list li,.biz__list li,.guide__ways li{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}.tech__list.is-in li,.biz__list.is-in li,.guide__ways.is-in li{opacity:1;transform:none}li:nth-child(2){transition-delay:.15s}li:nth-child(3){transition-delay:.3s}li:nth-child(4){transition-delay:.45s}
+.price-sec dl>div{transition:background .3s}.price-sec dl>div:hover{background:var(--sand)}
+.js .vhead{opacity:0;transform:translateY(-18px);transition:opacity 1.1s,transform 1.1s}.js .vhead.is-in{opacity:1;transform:none}
+.js .sand-b1::after,.js .sand-b2::after,.js .sand-b3::after,.js .sand-t3::before{clip-path:inset(0 100% 0 0);transition:clip-path 2.4s cubic-bezier(.3,.6,.2,1)}.js .is-sand::after,.js .is-sand::before{clip-path:inset(0)}
+.work img,.table__sub img,.biz__list img{transition-property:clip-path,transform}.work:hover img,.biz__list li:hover img{transform:scale(1.02)}.biz__list li{overflow:hidden}.biz__list img{transition:transform .8s}
 @media (max-width:1180px){.about,.atelier,.tech,.biz{padding-right:130px}.about{gap:40px;padding-left:40px}.works,.price-sec,.guide,.facts,.remake{padding-left:40px;padding-right:40px}.table__sub{padding-inline:40px}.nav{gap:18px;font-size:13px}.remake__in{grid-template-columns:minmax(0,1fr) 240px 240px}.ft{padding-inline:40px}.tech{padding-left:40px}.biz{padding-left:40px}.atelier{padding-left:40px}.vhead{right:30px}}
 @media (max-width:900px){
   body{font-size:15px;line-height:2}.pc{display:none}
@@ -89,4 +100,4 @@ figure{margin:0}figcaption{font:500 12px/2 var(--en);letter-spacing:.27em;color:
   .facts{padding:50px 24px}.facts h2{font-size:19px}.facts dl>div{grid-template-columns:minmax(0,1fr);gap:2px}
   .ft{grid-template-columns:minmax(0,1fr);padding:40px 24px 24px}.ft nav{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal,.work>div,.about__body,.tech__list li,.biz__list li,.guide__ways li,.js .vhead{opacity:1!important;transform:none!important}.work img,.about img,.table__main img,.js .sand-b1::after,.js .sand-b2::after,.js .sand-b3::after,.js .sand-t3::before{clip-path:none!important}}
