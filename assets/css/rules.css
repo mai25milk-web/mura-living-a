@@ -218,3 +218,4 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
   .hero__t2{top:312px;bottom:auto;justify-items:start}.btn--hero{width:var(--btn-w)}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){.hero__bg,.hero__layer,.hero__lace{object-position:50% 32%}}
+.hero__sub span:first-child{margin-right:.4em}
