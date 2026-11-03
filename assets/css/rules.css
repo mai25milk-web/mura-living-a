@@ -213,3 +213,8 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
 @media (min-width:1024px) and (max-width:1279px){.about__body br,.atelier br,.works__lead br{display:none}}
 @media (max-width:1023px){.hero__bg,.hero__layer,.hero__lace{object-position:50% 40%}}
 @media (max-width:1023px){.atelier .addr br{display:inline}}
+/* タブレット：ボタンを見出しの下（海の上）に置き、作品にかけない */
+@media (min-width:768px) and (max-width:1023px){
+  .hero__t2{top:312px;bottom:auto;justify-items:start}.btn--hero{width:var(--btn-w)}
+}
+@media (min-width:768px) and (max-width:1023px) and (orientation:landscape){.hero__bg,.hero__layer,.hero__lace{object-position:50% 32%}}
