@@ -219,3 +219,6 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){.hero__bg,.hero__layer,.hero__lace{object-position:50% 32%}}
 .hero__sub span:first-child{margin-right:.4em}
+/* ヒーローの「沖縄のレジンアートなら Mura Living」を一段小さく（PC・タブレット32／SP24） */
+.hero__sub{font-size:32px}
+@media (max-width:767px){.hero__sub{font-size:24px}}
