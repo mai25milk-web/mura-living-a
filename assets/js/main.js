@@ -15,12 +15,12 @@
   document.querySelectorAll('.vhead,.sand-b1,.sand-b2,.sand-b3,.sand-t3').forEach(function (el) { sub.observe(el); });
 
   // スクロール：ヘッダーと海の視差
-  var hd = document.querySelector('.hd'), bg = document.querySelector('.hero__bg'), hero = document.querySelector('.hero'), tick = false;
+  var hd = document.querySelector('.hd'), bg = document.querySelector('.hero__bg'), hero = document.querySelector('.hero, .phero'), tick = false;
   var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function run() {
-    var y = scrollY, h = hero.offsetHeight;
+    var y = scrollY, h = hero ? hero.offsetHeight : 0;
     hd.classList.toggle('is-fixed', y > h * .75);
-    if (!calm && y < h) bg.style.setProperty('--py', (y * .14).toFixed(1) + 'px');
+    if (bg && !calm && y < h) bg.style.setProperty('--py', (y * .14).toFixed(1) + 'px');
     tick = false;
   }
   addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(run); } }, { passive: true });
