@@ -247,3 +247,5 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
   .hero__t1{top:88px}
 }
 @media (max-width:374px){.hero{aspect-ratio:360/650}.hero__t1{top:84px}}
+/* 文中のリンク */
+.tlink{color:var(--teal);text-decoration:underline;text-underline-offset:4px;transition:opacity .3s}.tlink:hover{opacity:.7}
