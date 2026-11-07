@@ -222,3 +222,10 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
 /* ヒーローの「沖縄のレジンアートなら Mura Living」を一段小さく（PC・タブレット32／SP24） */
 .hero__sub{font-size:32px}
 @media (max-width:767px){.hero__sub{font-size:24px}}
+/* トップの組み直し：入口ボタンとフッターの所在地 */
+.tech__more{margin-top:var(--s-6);text-align:center}
+.guide__ways li{display:grid;gap:var(--s-2);align-content:start;justify-items:start}.guide__ways .btn{margin-top:var(--s-1)}
+.ft__info{grid-column:1/-1;font-size:var(--fs-s);line-height:var(--lh-s);color:var(--sub)}.ft__info a{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:767px){.tech__more{margin-top:0}.tech__more .btn,.guide__ways .btn{width:100%}.guide__ways li{justify-items:stretch}}
+/* スマホ：砂の飾りがボタンにかからないように */
+@media (max-width:767px){.guide__ways{padding-bottom:var(--s-8)}.atelier{padding-bottom:calc(var(--sec) + var(--s-8))}}
