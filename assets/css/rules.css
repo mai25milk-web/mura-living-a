@@ -239,4 +239,11 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
   .hero__sub{line-height:1.35}
   .hero__bg,.hero__layer,.hero__lace{object-position:50% 28%}
 }
-@media (max-width:767px) and (max-height:700px){.hero__bg,.hero__layer,.hero__lace{object-position:50% 8%}.hero__t1{top:88px}}
+/* SP：ヒーローを画面の高さではなく幅に比例させ、文字は空・作品は真ん中・ボタンは作品の下に固定 */
+@media (max-width:767px){
+  .hero{aspect-ratio:393/690;height:auto;min-height:0;max-height:none}
+  .hero__bg,.hero__layer,.hero__lace{object-position:50% 34%}
+  .hero::before{height:40%}
+  .hero__t1{top:88px}
+}
+@media (max-width:374px){.hero{aspect-ratio:360/650}.hero__t1{top:84px}}
