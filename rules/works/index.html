@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Cormorant+Garamond:wght@500;600&display=swap">
 <link rel="stylesheet" href="../../assets/css/rules.css?v=10">
-<link rel="stylesheet" href="../../assets/css/sub.css?v=6">
+<link rel="stylesheet" href="../../assets/css/sub.css?v=7">
 </head>
 <body class="sub">
 <header class="hd" id="top">
@@ -33,80 +33,88 @@
   <img src="../../assets/img/image8.webp" alt="" width="1600" height="900">
   <div class="phero__in">
     <p class="phero__en">WORKS</p>
-    <h1>海のレジンアート作品一覧</h1>
+    <h1>作品一覧</h1>
     <p class="phero__lead">ひとつとして同じ海はありません。<br>壁に掛ける四角と丸、長い壁のための横長の作品があります。</p>
   </div>
 </section>
 <nav class="crumbs" aria-label="ページの位置"><ol><li><a href="../">ホーム</a></li><li aria-current="page">作品一覧</li></ol></nav>
-<section class="ps">
-  <div class="ps__in">
-    <nav class="filters" aria-label="作品の種類"><a href="#list" aria-current="true">すべて</a><a href="#list">四角</a><a href="#list">丸</a><a href="#list">横長</a><a href="../table/">テーブル</a></nav>
-    <div class="cards" id="list">
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image8-l.webp" alt="白い壁に掛けた四角い海のレジンアート" loading="lazy" width="800" height="600">
+  <section class="ps">
+    <div class="ps__in">
+      <nav class="filters" aria-label="作品の種類"><a href="#all" aria-current="true">すべて</a><a href="#square">四角</a><a href="#round">丸</a><a href="#long">横長</a><a href="../table/">テーブル</a></nav>
+      <div class="cards" id="list">
+  <article class="card" data-type="square"><a href="../works/w01/"><img src="../../assets/img/image8-l.webp" alt="白い壁に掛けた四角い海のレジンアート" loading="lazy" width="800" height="600">
   <h3>SHORE<small>渚</small></h3></a>
   <p>壁掛け（四角）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image9.webp" alt="棚の上の壁に掛けた丸い海のレジンアート" loading="lazy" width="800" height="600">
+<article class="card" data-type="round"><a href="../works/w01/"><img src="../../assets/img/image9.webp" alt="棚の上の壁に掛けた丸い海のレジンアート" loading="lazy" width="800" height="600">
   <h3>ROUND<small>円</small></h3></a>
   <p>壁掛け（丸）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image5.webp" alt="ソファの上の壁に掛けた横長の海のレジンアート" loading="lazy" width="800" height="600">
+<article class="card" data-type="long"><a href="../works/w01/"><img src="../../assets/img/image5.webp" alt="ソファの上の壁に掛けた横長の海のレジンアート" loading="lazy" width="800" height="600">
   <h3>LONG<small>横長</small></h3></a>
   <p>壁掛け（横長）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image33.webp" alt="玄関の壁に縦に掛けた海のレジンアート" loading="lazy" width="800" height="600">
+<article class="card" data-type="long"><a href="../works/w01/"><img src="../../assets/img/image33.webp" alt="玄関の壁に縦に掛けた海のレジンアート" loading="lazy" width="800" height="600">
   <h3>No.04</h3></a>
   <p>壁掛け（縦長）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image14.webp" alt="珊瑚礁の浅瀬を表した海のレジンアート" loading="lazy" width="800" height="600">
+<article class="card" data-type="square"><a href="../works/w01/"><img src="../../assets/img/image14.webp" alt="珊瑚礁の浅瀬を表した海のレジンアート" loading="lazy" width="800" height="600">
   <h3>No.05</h3></a>
   <p>壁掛け（四角）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
-<article class="card"><a href="../works/w01/"><img src="../../assets/img/image21.webp" alt="深い青の海を表した丸いレジンアート" loading="lazy" width="800" height="600">
+<article class="card" data-type="round"><a href="../works/w01/"><img src="../../assets/img/image21.webp" alt="深い青の海を表した丸いレジンアート" loading="lazy" width="800" height="600">
   <h3>No.06</h3></a>
   <p>壁掛け（丸）</p><p class="meta"><span>サイズ<span class="tbd">【要確認】</span></span><span>価格<span class="tbd">【要確認】</span></span></p></article>
 
+      </div>
+<script>
+(function(){var nav=document.querySelector('.filters'),cards=document.querySelectorAll('#list .card');
+  function show(first){var t=(location.hash||'#all').slice(1);if(!/^(all|square|round|long)$/.test(t))t='all';
+    nav.querySelectorAll('a[href^="#"]').forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('href')==='#'+t)});
+    cards.forEach(function(c){c.hidden=t!=='all'&&c.dataset.type!==t});
+    if(first&&t!=='all')nav.scrollIntoView();}
+  window.addEventListener('hashchange',function(){show(false)});show(true);})();
+</script>
+      <p class="small">作品名、サイズ、価格は仮で置いています。<span class="tbd">【要確認：掲載する作品と各作品の情報】</span><br>販売中の作品は、オンラインショップ（STORES）でそのままご購入いただけます。</p>
+      <p class="center"><a class="btn btn--fill btn--en" href="https://mura-living.stores.jp/" target="_blank" rel="noopener">ONLINE STORE</a></p>
     </div>
-    <p class="small">作品名、サイズ、価格は仮で置いています。<span class="tbd">【要確認：掲載する作品と各作品の情報】</span><br>販売中の作品は、オンラインショップ（STORES）でそのままご購入いただけます。</p>
-    <p class="center"><a class="btn btn--fill btn--en" href="https://mura-living.stores.jp/" target="_blank" rel="noopener">ONLINE STORE</a></p>
-  </div>
-</section>
-<section class="ps ps--pale" id="price">
-  <div class="ps__in">
-    <div class="ttl"><span>PRICE</span><h2>サイズと価格の目安</h2></div>
-    <div class="pgrid">
-<div><dl class="plist"><h3>壁掛けアート（四角）</h3>
+  </section>
+  <section class="ps ps--pale" id="price">
+    <div class="ps__in">
+      <div class="ttl"><span>PRICE</span><h2>サイズと価格の目安</h2></div>
+      <div class="pgrid">
+  <div><dl class="plist"><h3>壁掛けアート（四角）</h3>
   <div><dt>20×20cm</dt><dd>¥25,000</dd></div><div><dt>30×42cm</dt><dd>¥70,000</dd></div><div><dt>42×60cm</dt><dd>¥100,000</dd></div><div><dt>30×90cm</dt><dd>¥150,000</dd></div><div><dt>40×120cm</dt><dd>¥200,000</dd></div><div><dt>60×100cm</dt><dd>¥280,000</dd></div></dl></div>
 <div><dl class="plist"><h3>壁掛けアート（丸）</h3>
   <div><dt>直径40cm</dt><dd>¥70,000</dd></div><div><dt>直径60cm</dt><dd>¥100,000</dd></div></dl></div>
 
+      </div>
+      <p class="small">価格はすべて税別の目安です。一点ものの作品の価格は、オンラインショップでご確認ください。</p>
     </div>
-    <p class="small">価格はすべて税別の目安です。一点ものの作品の価格は、オンラインショップでご確認ください。</p>
-  </div>
-</section>
-<section class="ps">
-  <div class="ps__in">
-    <div class="split">
-      <img src="../../assets/img/image24.webp" alt="海の見えるリビングに置いた海のレジンアート" loading="lazy">
-      <div class="split__body">
-        <div class="ttl"><span>ORDER</span><h2>部屋に合わせて作る</h2></div>
-        <p>掛けたい壁の幅や部屋の光に合わせて、サイズと色を決めてから制作します。打ち合わせから完成までの目安は1〜2週間です。</p>
-        <a class="btn" href="../order/">オーダー制作について</a>
+  </section>
+  <section class="ps">
+    <div class="ps__in">
+      <div class="split">
+        <img src="../../assets/img/image24.webp" alt="海の見えるリビングに置いた海のレジンアート" loading="lazy">
+        <div class="split__body">
+          <div class="ttl"><span>ORDER</span><h2>部屋に合わせて作る</h2></div>
+          <p>掛けたい壁の幅や部屋の光に合わせて、サイズと色を決めてから制作します。打ち合わせから完成までの目安は1〜2週間です。</p>
+          <a class="btn" href="../order/">オーダー制作について</a>
+        </div>
+      </div>
+      <div class="split split--r">
+        <img src="../../assets/img/image20.webp" alt="砂浜と波の泡を表した、レジンアートの接写" loading="lazy">
+        <div class="split__body">
+          <div class="ttl"><span>OUR CRAFT</span><h2>海が立体に見える理由</h2></div>
+          <p>砂浜の凹凸を土台から作り、何色もの青を重ね、何度も削っては重ねています。平らな絵とは光の入り方が違います。</p>
+          <a class="btn" href="../technique/">制作のこだわりへ</a>
+        </div>
       </div>
     </div>
-    <div class="split split--r">
-      <img src="../../assets/img/image20.webp" alt="砂浜と波の泡を表した、レジンアートの接写" loading="lazy">
-      <div class="split__body">
-        <div class="ttl"><span>OUR CRAFT</span><h2>海が立体に見える理由</h2></div>
-        <p>砂浜の凹凸を土台から作り、何色もの青を重ね、何度も削っては重ねています。平らな絵とは光の入り方が違います。</p>
-        <a class="btn" href="../technique/">制作のこだわりへ</a>
-      </div>
+  </section>
+  <section class="ps ps--sand" id="sold">
+    <div class="ps__in">
+      <div class="ttl"><span>SOLD</span><h2>売れた作品（売約済み）</h2></div>
+      <p>これまでにお届けした作品です。同じ雰囲気の作品をご希望の方は、オーダーでご相談ください。</p>
+      <p class="small"><span class="tbd">【要確認：売れた作品の写真と掲載の可否】</span></p>
     </div>
-  </div>
-</section>
-<section class="ps ps--sand" id="sold">
-  <div class="ps__in">
-    <div class="ttl"><span>SOLD</span><h2>売れた作品（売約済み）</h2></div>
-    <p>これまでにお届けした作品です。同じ雰囲気の作品をご希望の方は、オーダーでご相談ください。</p>
-    <p class="small"><span class="tbd">【要確認：売れた作品の写真と掲載の可否】</span></p>
-  </div>
-</section>
-<section class="cta">
+  </section>
+  <section class="cta">
   <img src="../../assets/img/image10.webp" alt="" loading="lazy">
   <div class="cta__in">
     <h2>実物の海を見に来ませんか</h2>

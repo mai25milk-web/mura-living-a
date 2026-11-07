@@ -131,3 +131,5 @@
 .steps h3,.steps p{grid-column:2}
 @media (max-width:767px){.steps li{grid-template-columns:minmax(0,1fr)}.steps .st,.steps h3,.steps p{grid-column:1;grid-row:auto}}
 .tbd{display:inline-block;max-width:100%}
+/* 作品一覧の絞り込み */
+.card[hidden]{display:none}.filters{scroll-margin-top:96px}
