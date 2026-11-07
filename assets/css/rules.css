@@ -249,3 +249,4 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
 @media (max-width:374px){.hero{aspect-ratio:360/650}.hero__t1{top:84px}}
 /* 文中のリンク */
 .tlink{color:var(--teal);text-decoration:underline;text-underline-offset:4px;transition:opacity .3s}.tlink:hover{opacity:.7}
+section.sand-b1{padding-bottom:calc(112px + var(--s-6))}section.sand-b2{padding-bottom:calc(88px + var(--s-6))}section.sand-b3{padding-bottom:calc(72px + var(--s-6))}
