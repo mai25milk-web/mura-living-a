@@ -134,3 +134,4 @@
 /* 作品一覧の絞り込み */
 .card[hidden]{display:none}.filters{scroll-margin-top:96px}
 #price{scroll-margin-top:72px}
+.faq-h{margin:16px 0 -32px;font-size:var(--h-4);line-height:var(--lh);letter-spacing:.1em;color:var(--teal)}
