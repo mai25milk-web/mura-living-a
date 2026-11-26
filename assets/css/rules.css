@@ -251,7 +251,7 @@ figcaption{font:500 var(--fs-xs)/var(--lh-s) var(--en);letter-spacing:.28em;colo
 .tlink{color:var(--teal);text-decoration:underline;text-underline-offset:4px;transition:opacity .3s}.tlink:hover{opacity:.7}
 section.sand-b1{padding-bottom:calc(112px + var(--s-6))}section.sand-b2{padding-bottom:calc(88px + var(--s-6))}section.sand-b3{padding-bottom:calc(72px + var(--s-6))}
 /* トップFV v4：水色の海＋斜めのもや＋作品（11/26） */
-.hero--v4 .hero__mist{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(118deg,rgb(255 255 255/0) 40%,rgb(255 255 255/.8) 56%,rgb(248 251 251/.97) 70%);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 24%);mask-image:linear-gradient(180deg,transparent 0,#000 24%)}
+.hero--v4 .hero__mist{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(118deg,rgb(242 250 250/0) 42%,rgb(242 250 250/.42) 60%,rgb(242 250 250/.62) 82%);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 24%);mask-image:linear-gradient(180deg,transparent 0,#000 24%)}
 .hero--v4::before{height:30%;background:linear-gradient(rgb(0 40 60/.35),rgb(0 40 60/0))}
 .hero--v4 .hero__bg{object-position:center 42%}
 .hero__art{position:absolute;z-index:3;right:5%;top:20%;width:38%;aspect-ratio:620/560;animation:artIn 1.2s .4s cubic-bezier(.2,.75,.2,1) both}
@@ -263,7 +263,7 @@ section.sand-b1{padding-bottom:calc(112px + var(--s-6))}section.sand-b2{padding-
 @keyframes artIn{from{opacity:.01;transform:translateY(16px)}to{opacity:1;transform:none}}
 .hero--v4 .hero__lead{color:var(--white);text-shadow:0 1px 10px rgb(0 50 70/.45)}
 @media (max-width:1023px){
-  .hero--v4 .hero__mist{background:linear-gradient(180deg,rgb(255 255 255/0) 42%,rgb(255 255 255/.82) 56%,rgb(248 251 251/.97) 66%);-webkit-mask-image:none;mask-image:none}
+  .hero--v4 .hero__mist{background:linear-gradient(180deg,rgb(242 250 250/0) 44%,rgb(242 250 250/.45) 60%,rgb(242 250 250/.66) 76%);-webkit-mask-image:none;mask-image:none}
   .hero--v4 .hero__bg{object-position:30% 30%}
   .hero__art{left:50%;right:auto;translate:-50% 0;top:auto;bottom:calc(var(--s-3) + 88px);width:min(80%,440px)}
 }
