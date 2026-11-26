@@ -268,3 +268,6 @@ section.sand-b1{padding-bottom:calc(112px + var(--s-6))}section.sand-b2{padding-
   .hero__art{left:50%;right:auto;translate:-50% 0;top:auto;bottom:calc(var(--s-3) + 88px);width:min(80%,440px)}
 }
 @media (min-width:768px) and (max-width:1023px){.hero__art{bottom:7%;width:min(72%,560px)}}
+/* よくある質問をナビに追加（11/26）：狭いPC幅で収める */
+@media (min-width:1024px) and (max-width:1279px){.hd{padding-inline:40px}.nav{gap:16px;font-size:12px;letter-spacing:.04em}.nav .btn{width:176px;padding:0 var(--s-3) 0 var(--s-2);letter-spacing:.1em;justify-content:flex-start}.logo b{font-size:24px}.logo small{font-size:9px}}
+@media (min-width:1280px) and (max-width:1439px){.nav{gap:20px;letter-spacing:.06em}.nav .btn{width:176px}}
