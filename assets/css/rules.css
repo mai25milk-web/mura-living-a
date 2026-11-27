@@ -285,3 +285,4 @@ section.sand-b1{padding-bottom:calc(112px + var(--s-6))}section.sand-b2{padding-
 .nav__dd{display:grid;justify-items:center;gap:var(--s-1)}
 .nav__sub{display:grid;justify-items:center;gap:var(--s-1);font-size:var(--fs-s);font-weight:400;color:var(--teal)}
 }
+.split.split--artist>img{aspect-ratio:4/5;object-position:50% 30%;max-width:440px;justify-self:center}
